@@ -13,17 +13,24 @@ def Hashtag(string):
     # z = "#"
     z = "#"
 
-    if count_string <= 140 and count_string > 0:
+    if count_string > 0:
         for i in list_new:
             if i != " ":
                 z += i
-        return print(z)
     else:
         return print("False")
+    list2 = list(z)
+    # print(list2)
+    print(len(list2))
+    if len(list2) > 140:
+        return print("False")
+    else:
+        return print(z)
 
 Hashtag(" Hello there how are you doing")
 Hashtag(" Hello World " )
 Hashtag("")
+Hashtag("            opq    uvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz")
 
 # Soal 2
 def create_phone_number(number):
